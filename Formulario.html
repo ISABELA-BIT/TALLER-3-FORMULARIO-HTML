@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="" method="post">
+        <table border="3">
+            <tr>
+                <td>Campo</td>
+                <td>Entrada de datos</td>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre</label></td>
+                <td><input type="text" name="Nombre" id="Nombre"  placeholder="Ingrese su nombre" maxlength="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="Correo"> Correo electronico</label></td>
+                <td><input type="email" name="Correo" id="Correo" placeholder="Ingrese su correo" required></td>
+            </tr>
+            <tr>
+                <Td><label for="Contraseña"> Contraseña</label></Td>
+                <Td><input type="password" placeholder="Ingrese su contraseña"></Td>
+            </tr>
+            <tr>
+                <td><label for="Edad">Edad</label></td>
+                <td><input type="number" name="edad" id="Edad" min="18" max="100" required></td>
+            </tr>
+            <tr>
+                <td><label for="Fecha">Fecha de Nacimiento</label></td>
+               <td><input type="date" name="Fecha" id="Fecha" required></td>   
+            </tr>
+            <tr>
+                <td><label for="Genero"> Genero</label></td>
+                <td><Select name="Genero" id="Genero" required>
+                    <option value="Seleccione"> Selecciona tu genero</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro">Otro</option>
+
+                </Select></td>
+            </tr>
+
+            <tr>
+                <td><label for="sitioWeb">Tu sitio web</label></td>
+                <td><input type="url" id="sitioWeb" name="website" placeholder="https://ejemplo.com"></td>
+            </tr>
+            <tr>
+                <td><label for="Archivo"> Archivo</label></td>
+                <td> <input type="file" name="Archivo" id="Arvhico" required></td>
+            </tr>
+            <tr>
+                <td><label for="Comentario">Comentario</label></td>
+                <td><textarea name="comentarios" id="Comentario"  placeholder="Escribe tu comentario" minlength="10" maxlength="200"></textarea></td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <input type="radio" name="aceptar_terminos" id="Aceptar_Terminos" required>Acepta los Terminos y Condiciones
+                    <br>
+                    <input type="radio" name="Suscribirse" id="Suscribirse">Suscribirse a nuestro boletín
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
